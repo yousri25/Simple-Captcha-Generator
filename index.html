@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genere Captcha</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="div">
+      <header>
+        <h1 id="hhh">Generateur de Captcha Aleatoire</h1>
+        <p id="ppp">generer un code captcha securiser et le tester</p>
+      </header>
+      <div id="div1">
+        <input type="text" name="captcha" id="captcha" readonly /><br />
+        <button class="btn" id="btn1" onclick="generer()">Genere Captcha</button>
+        <button class="btn" id="btn2" onclick="actualiser()">Actualiser</button>
+      </div>
+      <div id="div2">
+        <h2>Verification du captcha</h2>
+        <input type="text"name="verif"id="verif"placeholder="Verifier Votre Captcha"/>
+        <button class="btn" id="btn3" onclick="verif()">Verifier</button>
+        <p id="result"></p>
+      </div>
+      <div id="div3">
+        <h3>Longeur de Captcha</h3>
+        <select name="nombre" id="num">
+          <option selected value="4">4 caractere</option>
+          <option value="5">5 caractere</option>
+          <option value="6">6 caractere</option>
+          <option value="7">7 caractere</option>
+          <option value="8">8 caractere</option>
+        </select>
+        <h3>Type de Caracteres</h3>
+        <select name="caractere" id="car">
+          <option selected value="1">Alphanumerique</option>
+          <option value="2">Lettre Seulement</option>
+          <option value="3">Chiffre Seulement</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>
